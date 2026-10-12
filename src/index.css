@@ -23,7 +23,7 @@ body { margin: 0; min-width: 320px; min-height: 100vh; background: #fafafa; }
 button, input { font: inherit; }
 .font-display { font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif; }
 
-.house-stage { display: flex; min-height: 300px; align-items: center; justify-content: center; overflow: hidden; }
+.house-stage { display: flex; min-height: 350px; align-items: center; justify-content: center; overflow: hidden; }
 .house-map { display: block; width: 100%; max-width: 680px; overflow: visible; }
 .iso-room { cursor: pointer; outline: none; }
 .iso-room-floor { stroke: rgba(24,24,27,.12); stroke-width: 2; transition: filter .2s ease, stroke .2s ease, stroke-width .2s ease; }
@@ -31,17 +31,20 @@ button, input { font: inherit; }
 .iso-room-side-right { opacity: .78; }
 .iso-room:hover .iso-room-floor,.iso-room:focus-visible .iso-room-floor { filter: brightness(1.04); stroke: #47725e; stroke-width: 3; }
 .iso-room[data-active="true"] .iso-room-floor { stroke: #254d3c; stroke-width: 4; filter: drop-shadow(0 7px 7px rgba(24,24,27,.16)); }
-.iso-icon,.iso-avatar { font-family: "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif; pointer-events: none; }
-.iso-icon { font-size: 25px; filter: drop-shadow(2px 3px 2px rgba(0,0,0,.14)); }
-.iso-avatar { font-size: 22px; filter: drop-shadow(2px 4px 2px rgba(0,0,0,.2)); }
+.iso-icon { font-family: "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif; font-size: 34px; pointer-events: none; filter: drop-shadow(2px 4px 2px rgba(0,0,0,.14)); }
+.iso-copy-bg { fill: rgba(255,255,255,.96); stroke: #e4e4e7; stroke-width: 1.5; filter: drop-shadow(0 3px 5px rgba(24,24,27,.1)); transition: stroke .2s ease, stroke-width .2s ease; }
+.iso-room:hover .iso-copy-bg,.iso-room:focus-visible .iso-copy-bg { stroke: #47725e; stroke-width: 2; }
+.iso-room[data-active="true"] .iso-copy-bg { stroke: #254d3c; stroke-width: 2.5; }
+.iso-selected { fill: #254d3c; stroke: white; stroke-width: 2; }
+.iso-selected-check { fill: white; font-size: 14px; font-weight: 800; pointer-events: none; }
 .iso-label { fill: #27272a; font-size: 15px; font-weight: 700; pointer-events: none; }
-.iso-sub { fill: #52525b; font-size: 10px; font-weight: 500; pointer-events: none; }
+.iso-sub { fill: #52525b; font-size: 10.5px; font-weight: 500; pointer-events: none; }
 
 .scroll-soft { scrollbar-width: thin; scrollbar-color: #d4d4d8 transparent; }
 .drop-active { outline: 2px solid #47725e; outline-offset: 3px; background: #f0f7f3 !important; }
 
 @media (max-width: 780px) {
-  .house-stage { min-height: 230px; }
+  .house-stage { min-height: 270px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; }
