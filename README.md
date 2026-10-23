@@ -1,6 +1,6 @@
-# Missione Valigia — Rimini 2026
+# Missione Valigia — Roma 23/10–1/11 2026
 
-Mini web app interattiva in italiano per preparare i bagagli come in un gestionale isometrico.
+Mini web app interattiva in italiano per preparare i bagagli del rientro a Roma da H-FARM, come in un gestionale isometrico.
 
 ## Demo
 
@@ -19,6 +19,7 @@ Mini web app interattiva in italiano per preparare i bagagli come in un gestiona
 - Sei stanze esplorabili
 - Valigia, zaino, borsa sport e attrezzatura separata
 - Quantità, drag-and-drop e controllo automatico dei mancanti
+- Pannello treni per l'andata del 23/10 e il ritorno del 1/11
 - Persistenza locale tra sessioni
 - Interfaccia responsive e accessibile
 
